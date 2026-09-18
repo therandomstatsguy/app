@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Random Stats Guy</title>
+<title>Rando</title>
 <meta name="description" content="Stats Watch previews, streaks and dashboards across every competition Random Stats Guy covers.">
 <meta name="theme-color" content="#07090c">
 <meta name="color-scheme" content="dark">
@@ -12,10 +12,10 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="RSG">
+<meta name="apple-mobile-web-app-title" content="Rando">
 <meta name="mobile-web-app-capable" content="yes">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Random Stats Guy">
+<meta property="og:title" content="Rando">
 <meta property="og:description" content="Stats Watch previews, streaks and dashboards across every competition Random Stats Guy covers.">
 <meta property="og:image" content="icon-512.png">
 <meta name="twitter:card" content="summary">
@@ -359,6 +359,8 @@ html{padding-top:0!important}
 .pvco-lbl{font-size:9.5px;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;opacity:.85;margin-bottom:7px}
 .pvco-row{display:flex;align-items:center;gap:10px}
 .pvco-note{font-size:11.5px;line-height:1.55;opacity:.88;margin-top:8px;font-weight:500}
+.pvco-go{font-size:19px;font-weight:800;opacity:.8;margin-left:auto}
+a.pvco{display:block;transition:filter .15s}a.pvco:hover{filter:brightness(1.08)}
 .pvco-lg{flex:0 0 30px;width:30px;height:30px;object-fit:contain}
 .pvco-txt{font-family:'Saira Condensed',sans-serif;font-size:18px;font-weight:900;flex:1;min-width:0;letter-spacing:.3px}
 .dash-note{font-size:11px;color:var(--warn);margin-top:10px;line-height:1.5}
@@ -3243,9 +3245,14 @@ function insightCard(c){
   } else {
     pic = h`<span class="ic-pic ini" style="--cc:${col};--cc2:${tm.c2||'#fff'}">${esc(initials(c.name))}</span>`;
   }
-  var gi = +(String(c.gameId).split('-g')[1] || 0);
+  /* fantasy tiles aren't tied to a fixture, so they open the dashboard itself */
+  var gparts = String(c.gameId || '').split('-g');
+  var gi = gparts.length > 1 && !isNaN(+gparts[1]) ? +gparts[1] : null;
   var link = (SP[c.sport] && SP[c.sport].dash && canDash(c.sport))
-    ? dashURL(c.sport, gi, c.kind === 'player' ? c.name : null) : '';
+    ? (c.kind === 'team'
+        ? dashURL(c.sport, gi, null, {tab:'teamstats', team:c.teamDisp || c.name})
+        : dashURL(c.sport, gi, c.name))
+    : '';
   var tag = link ? 'a' : 'div';
   var attr = link ? ' href="' + esc(link) + '" target="_blank" rel="noopener"' : '';
   return h`<${tag} class="ic" style="--cc:${col};--acc:${sp.accent}"${attr}>
@@ -4038,13 +4045,20 @@ function scorerTeam(sportKey, g, sc){
   return hit;
 }
 function tipTeamOf(sportKey, g, tip){
-  var hit = null;
+  var low = String(tip || '').toLowerCase();
+  if (!low) return null;
   var names = (g.teams || []).map(function (t){ return t.name; });
   [g.home, g.away].forEach(function (n){ if (n && names.indexOf(n) < 0) names.push(n); });
+  var hit = null;
   names.forEach(function (n){
-    if (!hit && tip && String(tip).toLowerCase().indexOf(String(n).toLowerCase()) > -1) {
-      hit = teamOf(sportKey, n);
-    }
+    if (hit) return;
+    var tt = teamOf(sportKey, n);
+    /* the tip is written in whatever the write-up calls them — "Swans win"
+       against a club keyed as Sydney — so check the nicknames too */
+    var forms = [n].concat((tt && tt.alias) || [], (tt && tt.disp) ? [tt.disp] : []);
+    forms.forEach(function (f){
+      if (!hit && f && low.indexOf(String(f).toLowerCase()) > -1) hit = tt;
+    });
   });
   return hit;
 }
@@ -4162,12 +4176,16 @@ function previewBody(sportKey, g, sp, idx, who){
     if (g.tip) {
       var tipTeam = tipTeamOf(sportKey, g, g.tip);
       var tipC = (tipTeam && tipTeam.c) || sp.c1;
-      vs.push(h`<div class="pvco" style="background:${tipC};color:${onColor(tipC)}">
-        <div class="pvco-lbl">${esc(tipLbl)}</div>
+      var tipHref = (SP[sportKey] && SP[sportKey].dash && canDash(sportKey) && idx > -1)
+        ? dashURL(sportKey, idx, null, {tab:'teamstats', team:(tipTeam && tipTeam.disp) || ''}) : '';
+      var tipBody = h`<div class="pvco-lbl">${esc(tipLbl)}</div>
         <div class="pvco-row">${tipTeam && tipTeam.logo ? '<img class="pvco-lg" src="' + esc(tipTeam.logo) + '" alt="">' : ''}
-          <b class="pvco-txt">${esc(g.tip)}</b></div>
-        ${g.tipNote ? '<div class="pvco-note">' + esc(g.tipNote) + '</div>' : ''}
-      </div>`);
+          <b class="pvco-txt">${esc(g.tip)}</b>${tipHref ? '<span class="pvco-go">\u203a</span>' : ''}</div>
+        ${g.tipNote ? '<div class="pvco-note">' + esc(g.tipNote) + '</div>' : ''}`;
+      vs.push(tipHref
+        ? h`<a class="pvco" href="${esc(tipHref)}" target="_blank" rel="noopener"
+             style="background:${tipC};color:${onColor(tipC)}">${tipBody}</a>`
+        : h`<div class="pvco" style="background:${tipC};color:${onColor(tipC)}">${tipBody}</div>`);
     }
     if (g.bestScorer) {
       /* the best-prop line repeats the market ("Josh Allen anytime touchdown
@@ -4179,12 +4197,18 @@ function previewBody(sportKey, g, sp, idx, who){
       });
       var bt = scorerTeam(sportKey, g, bsc || {name:g.bestScorer});
       var bscC = (bt && bt.c) || sp.c1;
-      vs.push(h`<div class="pvco" style="background:${bscC};color:${onColor(bscC)}">
-        <div class="pvco-lbl">${esc(bestLbl)}</div>
+      var bName = (bsc && bsc.name) || String(g.bestScorer || '').split(/\s+\d|\s+(?:anytime|over|under|to score)/i)[0];
+      var bHref = (SP[sportKey] && SP[sportKey].dash && canDash(sportKey) && idx > -1 && bName)
+        ? dashURL(sportKey, idx, bName) : '';
+      var bBody = h`<div class="pvco-lbl">${esc(bestLbl)}</div>
         <div class="pvco-row">${bt && bt.logo ? '<img class="pvco-lg" src="' + esc(bt.logo) + '" alt="">' : ''}
           <b class="pvco-txt">${esc(g.bestScorer)}</b>
-          ${bsc ? oddChip({p:bsc.price, b:bookSlugOf(bsc.book)}) : ''}</div>
-      </div>`);
+          ${bsc ? oddChip({p:bsc.price, b:bookSlugOf(bsc.book)}) : ''}${bHref ? '<span class="pvco-go">\u203a</span>' : ''}</div>
+        ${g.bestNote ? '<div class="pvco-note">' + esc(g.bestNote) + '</div>' : ''}`;
+      vs.push(bHref
+        ? h`<a class="pvco" href="${esc(bHref)}" target="_blank" rel="noopener"
+             style="background:${bscC};color:${onColor(bscC)}">${bBody}</a>`
+        : h`<div class="pvco" style="background:${bscC};color:${onColor(bscC)}">${bBody}</div>`);
     }
     out.push(h`<section class="pvsec"><div class="pvh" style="--acc:${sp.accent}">The Verdict</div>${vs.join('')}</section>`);
   }
@@ -4247,12 +4271,17 @@ function dashFrag(gi, player){
   if (player) frag.push('player=' + encodeURIComponent(player));
   return frag.length ? '#' + frag.join('&') : '';
 }
-function dashURL(sportKey, gi, player){
+/* A dashboard deep link: the game, and then either the player whose modal to
+   open or the team whose stats to show. */
+function dashURL(sportKey, gi, player, opts){
   var sp = SP[sportKey];
   if (!sp || !sp.dash) return '';
+  opts = opts || {};
   var frag = [];
   if (gi != null && !isNaN(gi)) frag.push('game=' + gi);
   if (player) frag.push('player=' + encodeURIComponent(player));
+  if (opts.tab) frag.push('tab=' + encodeURIComponent(opts.tab));
+  if (opts.team) frag.push('team=' + encodeURIComponent(opts.team));
   return sp.dash.split('#')[0] + (frag.length ? '#' + frag.join('&') : '');
 }
 
@@ -4338,6 +4367,8 @@ function podcastSection(){
 
 /* the live offer for a tier, if there is one and it hasn't lapsed */
 function offerFor(tierId){
+  /* these are new-member offers, so anyone already signed in never sees one */
+  if (state.me) return null;
   var hit = null;
   (CONFIG.offers || []).forEach(function (o){
     if (hit || (o.tiers || []).indexOf(tierId) < 0) return;
@@ -4356,6 +4387,17 @@ function offerEnds(o){
         .replace(/\s?(am|pm)/i, function (m){ return m.trim().toLowerCase(); }) +
       (TZLABEL ? ' ' + TZLABEL : '');
   } catch (e){ return ''; }
+}
+
+/* What this tier would be from where they already are. Nobody signed in is
+   shopping from scratch, so "Join on Patreon" is only right for a visitor. */
+function joinLabel(tier, cur){
+  if (!state.me || !cur || cur.id === 'visitor') return 'Join on Patreon';
+  if (tier.id === cur.id) return 'Manage on Patreon';
+  var a = +tier.price || 0, b = +cur.price || 0;
+  if (a > b) return 'Upgrade';
+  if (a < b) return 'Downgrade';
+  return 'Switch to this tier';
 }
 
 function pageMembership(){
@@ -4384,7 +4426,7 @@ function pageMembership(){
         <span class="offer-t">Get ${esc(offer.label)}</span>
         <span class="offer-s">${esc(offer.note)}${offerEnds(offer) ? ' \u00b7 ends ' + esc(offerEnds(offer)) : ''}</span>
       </a>` : ''}
-      <a class="btn ${offer ? 'btn-s' : 'btn-p'}" style="margin-top:${offer ? '10px' : 'auto'};justify-content:center" href="${esc(offer ? offer.url : CONFIG.patreon)}" target="_blank" rel="noopener">Join on Patreon</a>
+      <a class="btn ${offer ? 'btn-s' : 'btn-p'}" style="margin-top:${offer ? '10px' : 'auto'};justify-content:center" href="${esc(offer ? offer.url : CONFIG.patreon)}" target="_blank" rel="noopener">${esc(joinLabel(t, cur))}</a>
     </div>`;
   });
 
