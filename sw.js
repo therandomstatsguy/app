@@ -10,7 +10,7 @@
    Bump CACHE whenever you publish a new build — the old one is deleted on
    activate, so members pick the new version up on their next launch. */
 
-var CACHE = 'rsg-v12';
+var CACHE = 'rsg-v14';
 var SHELL = [
   './',
   './index.html',
