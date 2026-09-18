@@ -7,17 +7,26 @@ members can install it to their home screen.
 index.html              the whole app (4.1 MB — see "Why so big" below)
 manifest.webmanifest    name, icons, colours for the install
 sw.js                   service worker: opens with no connection
-icons/                  home-screen and browser icons
+icon-192.png            \
+icon-512.png             |  home-screen and browser icons
+icon-maskable-512.png    |
+apple-touch-icon.png     |
+favicon-32.png          /
 ```
 
-Nothing else is needed. No build step, no dependencies, no server.
+Every file sits at the top level — there are no folders, so you can select all
+nine and drop them in together. Nothing else is needed: no build step, no
+dependencies, no server.
 
 ---
 
 ## Putting it live
 
 1. **Make a repo** — call it whatever you want the URL to be, e.g. `rsg-app`.
-2. **Upload these files** at the top level (not inside a folder).
+2. **Upload all nine files** at the top level. Add file → Upload files, then
+   select the lot and drop them in. (GitHub's web uploader only creates folders
+   from a *dragged folder* — this build has none, so there's nothing to get
+   wrong.)
 3. **Settings → Pages → Source: Deploy from a branch → `main` / `(root)`.**
 4. A minute later it's at `https://therandomstatsguy.github.io/rsg-app/`.
 

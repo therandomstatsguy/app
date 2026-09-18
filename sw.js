@@ -10,24 +10,30 @@
    Bump CACHE whenever you publish a new build — the old one is deleted on
    activate, so members pick the new version up on their next launch. */
 
-var CACHE = 'rsg-v1';
+var CACHE = 'rsg-v7';
 var SHELL = [
   './',
   './index.html',
   './manifest.webmanifest',
-  './icons/icon-192.png',
-  './icons/icon-512.png',
-  './icons/icon-maskable-512.png',
-  './icons/apple-touch-icon.png',
-  './icons/favicon-32.png'
+  './icon-192.png',
+  './icon-512.png',
+  './icon-maskable-512.png',
+  './apple-touch-icon.png',
+  './favicon-32.png'
 ];
 
 self.addEventListener('install', function (e) {
+  /* Cache each file on its own. addAll() is atomic — one missing file and the
+     whole cache stays empty, which silently costs you offline support. */
   e.waitUntil(
     caches.open(CACHE)
-      .then(function (c) { return c.addAll(SHELL); })
+      .then(function (c) {
+        return Promise.all(SHELL.map(function (url) {
+          return c.add(url).catch(function () { /* skip what isn't there */ });
+        }));
+      })
       .then(function () { return self.skipWaiting(); })
-      .catch(function () { /* a missing file must not block the install */ })
+      .catch(function () {})
   );
 });
 
