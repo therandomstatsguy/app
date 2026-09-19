@@ -388,7 +388,39 @@ a.pvco{display:block;transition:filter .15s}a.pvco:hover{filter:brightness(1.08)
 .lu-name{font-size:11px;font-weight:800;letter-spacing:.8px;text-transform:uppercase;margin-bottom:7px}
 .lu-list li b{color:var(--t3);font-weight:800;font-size:11px}
 .hub-head{display:flex;align-items:center;gap:12px;margin-top:14px;flex-wrap:wrap}
-.hub-dash{flex-shrink:0;padding:9px 16px;font-size:12px;margin-left:auto}
+.hub-cta{display:flex;gap:8px;margin-left:auto;flex-wrap:wrap}
+.hub-dash{flex-shrink:0;padding:9px 16px;font-size:12px}
+/* second CTA, so it reads as an alternative to the dashboard rather than
+   competing with it */
+.hub-chat{
+  flex-shrink:0;padding:9px 14px;font-size:12px;display:inline-flex;align-items:center;gap:6px;
+  background:transparent;color:var(--ch,var(--t1));
+  border:1px solid var(--line);
+  border:1px solid color-mix(in srgb,var(--ch,#888) 55%,transparent)}
+.hub-chat:hover{background:rgba(255,255,255,.06);
+  background:color-mix(in srgb,var(--ch,#888) 14%,transparent)}
+.hub-chat b{font-weight:800}
+/* ============================ your sports ============================ */
+.favgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(104px,1fr));gap:8px}
+.favb{
+  -webkit-appearance:none;appearance:none;font:inherit;cursor:pointer;text-align:left;
+  position:relative;display:flex;align-items:center;gap:8px;padding:10px 11px;
+  border-radius:var(--r-sm);border:1px solid var(--line);
+  background:var(--ink3);color:var(--t2);
+  font-family:'Saira Condensed',sans-serif;font-size:12.5px;font-weight:800;
+  letter-spacing:.4px;text-transform:uppercase;line-height:1.15}
+.favb.on{
+  color:var(--t1);border-color:var(--fc,var(--cta));
+  background:rgba(255,255,255,.07);
+  background:color-mix(in srgb,var(--fc,#888) 18%,var(--ink3))}
+.favb-ic{width:20px;height:20px;flex:0 0 20px;object-fit:contain;opacity:.85}
+.favb.on .favb-ic{opacity:1}
+.favb-n{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.favb-r{
+  flex:0 0 auto;width:17px;height:17px;border-radius:50%;display:grid;place-items:center;
+  font-size:9.5px;font-weight:900;background:var(--fc,var(--cta));color:#07090c;font-family:inherit}
+.favhint{font-size:11.5px;color:var(--t3);line-height:1.55;margin-top:10px}
+.favhint b{color:var(--t2)}
 .ftiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
 .ftile{display:flex;align-items:center;gap:11px;padding:14px;border-radius:var(--r-md);
   background:linear-gradient(140deg,var(--c1,#333) 0%,var(--c1,#333) 30%,var(--c2,#111) 100%);
@@ -3202,6 +3234,29 @@ var CONFIG = {
      out:'Open in Spotify', height:352}
   ],
 
+  /* Patreon member chats. One room often covers several competitions, so each
+     entry lists every sport that lands in it — add a key here and that sport's
+     hub grows a "Join the Chat" button with no other change.
+     Origin, the RLWC and College Football have no room of their own yet. */
+  chats:[
+    {name:'Rugby League', sports:['nrl', 'superleague'],
+     url:'https://www.patreon.com/messages/531dccdb7e774f50a69cb24c652a06ab?mode=campaign&tab=chats'},
+    {name:'NRLW', sports:['nrlw'],
+     url:'https://www.patreon.com/messages/ed7f28533f654a30abe12cb00d6f6611?mode=campaign&tab=chats'},
+    {name:'Rugby Union', sports:['intl', 'npc', 'superrugby'],
+     url:'https://www.patreon.com/messages/afaab69354ba4120a064c2543be058f2?mode=campaign&tab=chats'},
+    {name:'NFL', sports:['nfl'],
+     url:'https://www.patreon.com/messages/e190c3bb6f53431284e0f6dd5f179a5a?mode=campaign&tab=chats'},
+    {name:'AFL', sports:['afl', 'aflw'],
+     url:'https://www.patreon.com/messages/78dfe3b22ba24423b6d0dd129d3c598b?mode=campaign&tab=chats'},
+    {name:'Premier League', sports:['epl'],
+     url:'https://www.patreon.com/messages/820bba17a415499ca84a74d32350fbf7?mode=campaign&tab=chats'},
+    {name:'NBA', sports:['nba'],
+     url:'https://www.patreon.com/messages/b0b39454fdef48589c8d9564075f7137?mode=campaign&tab=chats'},
+    {name:'Cricket', sports:['cricket', 'bbl'],
+     url:'https://www.patreon.com/messages/71c097147d754fe2b764284baab1b621?mode=campaign&tab=chats'}
+  ],
+
   /* Limited-time joining offers. `ends` is the instant it lapses, so the strip
      takes itself down rather than advertising a dead deal. */
   offers:[
@@ -3242,6 +3297,45 @@ state.me = null;
   try { var raw = lsGet('rsg.me'); if (raw) state.me = JSON.parse(raw); }
   catch (e) { state.me = null; }
 })();
+
+/* ---------------------------- your sports ----------------------------
+   An ordered list of competition keys. Whatever is in here leads every
+   rail, in the order it was picked; everything else keeps its usual place
+   underneath, so a preference never hides anything. Device-local, like the
+   sign-in: it isn't a membership setting and never leaves this browser. */
+state.favs = [];
+(function initFavs(){
+  try {
+    var raw = lsGet('rsg.favs');
+    if (!raw) return;
+    var list = JSON.parse(raw);
+    if (Object.prototype.toString.call(list) !== '[object Array]') return;
+    /* drop anything that isn't a competition any more, so a renamed or
+       retired key can't wedge the ordering */
+    state.favs = list.filter(function (k){ return typeof k === 'string' && !!SP[k]; });
+  } catch (e) { state.favs = []; }
+})();
+function saveFavs(){
+  lsSet('rsg.favs', JSON.stringify(state.favs));
+}
+function toggleFav(key){
+  var i = state.favs.indexOf(key);
+  if (i > -1) state.favs.splice(i, 1);
+  else state.favs.push(key);
+  saveFavs();
+}
+/* position in the pecking order — everything unpicked sorts as one block
+   after the picked ones, keeping whatever order it already had */
+function favRank(key){
+  var i = state.favs.indexOf(key);
+  return i > -1 ? i : 9999;
+}
+/* stable sort by preference: ties keep the order they came in */
+function byFav(list, keyOf){
+  return list.map(function (x, i){ return {x:x, i:i, r:favRank(keyOf(x))}; })
+    .sort(function (a, b){ return a.r - b.r || a.i - b.i; })
+    .map(function (o){ return o.x; });
+}
 
 function tenureYears(since){
   if (!since) return 0;
@@ -3576,7 +3670,7 @@ function liveForRoute(){
   var r = state.route || {};
   if (r.name === 'sport' || r.name === 'game' || r.name === 'dash') return ensureLive(r.key);
   if (r.name === 'preview') {
-    var p = previewsAll()[r.i];
+    var p = previewById(r.i);
     if (p) ensureLive(p.sport);
   }
 }
@@ -3601,7 +3695,7 @@ function nextKick(key){
    configured order behind them */
 function sportsByKick(){
   var live = CONFIG.sports.filter(function(s){ return s.live; });
-  return live.map(function(s, i){ return {s:s, i:i, k:nextKick(s.key)}; })
+  var out = live.map(function(s, i){ return {s:s, i:i, k:nextKick(s.key)}; })
     .sort(function(a, b){
       if (a.k && b.k) return a.k < b.k ? -1 : (a.k > b.k ? 1 : a.i - b.i);
       if (a.k) return -1;
@@ -3609,6 +3703,8 @@ function sportsByKick(){
       return a.i - b.i;
     })
     .map(function(x){ return x.s; });
+  /* picked competitions lead; the rest keep their kickoff order behind them */
+  return byFav(out, function (s){ return s.key; });
 }
 var MIN_ODDS = 1.40;   /* no insight tile shows under this price */
 function cardsOf(family, sportKey, opts){
@@ -3638,6 +3734,10 @@ function cardsOf(family, sportKey, opts){
     });
   });
   out.sort(function(a,b){
+    /* a picked competition comes first whatever the run length; inside each
+       group the strongest streak still leads */
+    var fa = favRank(a.sport), fb = favRank(b.sport);
+    if (fa !== fb) return fa - fb;
     if (a.perfect !== b.perfect) return a.perfect ? -1 : 1;
     if (b.x !== a.x) return b.x - a.x;
     return a.y - b.y;
@@ -3659,7 +3759,16 @@ function fixturesAll(){
   return out;
 }
 function previewsAll(){
-  return (SNAP.previews || []).map(function(p, i){ return Object.assign({}, p, {_i:i}); });
+  var all = (SNAP.previews || []).map(function(p, i){ return Object.assign({}, p, {_i:i}); });
+  return byFav(all, function (p){ return p.sport; });
+}
+/* Links carry `_i`, the write-up's place in the snapshot, because the order on
+   screen moves with whatever the reader has picked — a position would point at
+   a different match the moment they change it. */
+function previewById(i){
+  var hit = null;
+  previewsAll().forEach(function (p){ if (hit === null && p._i === +i) hit = p; });
+  return hit;
 }
 function previewFor(key){
   var found = null;
@@ -4003,7 +4112,9 @@ function pageHome(){
   else out.push(lockedOrEmpty('Tryscorer Streaks', ['nrl','nrlw','npc','intl','superleague']));
 
   /* 6 — goalscorers, a rail per competition so the codes never share a shelf */
-  var goalSports = CONFIG.sports.filter(function (sp){ return cardsOf('goal', sp.key).length; });
+  var goalSports = byFav(
+    CONFIG.sports.filter(function (sp){ return cardsOf('goal', sp.key).length; }),
+    function (sp){ return sp.key; });
   if (goalSports.length) {
     goalSports.forEach(function (sp){
       var gs = cardsOf('goal', sp.key);
@@ -4242,6 +4353,26 @@ function pageSports(){
     ${sourceNote()}`;
 }
 
+/* the member chat covering this competition, if there is one */
+function chatFor(sportKey){
+  var hit = null;
+  (CONFIG.chats || []).forEach(function(c){
+    if (!hit && (c.sports || []).indexOf(sportKey) > -1) hit = c;
+  });
+  return hit;
+}
+/* The rooms are for paying members, and Patreon will turn anyone else away at
+   the door — so the button only appears once someone is signed in on a tier
+   that actually covers this competition. */
+function chatButton(key, s){
+  if (!state.me || !canPreview(key)) return '';
+  var c = chatFor(key);
+  if (!c) return '';
+  return h`<a class="btn hub-chat" style="--ch:${s.accent}"
+    href="${esc(c.url)}" target="_blank" rel="noopener"
+    title="${esc(c.name)} chat on Patreon">💬 <b>Join the Chat</b></a>`;
+}
+
 function pageSport(key){
   var s = SP[key];
   if (!s) return pageNotFound();
@@ -4254,7 +4385,10 @@ function pageSport(key){
   if (state.loading[key]) out.push(h`<div class="updating">Updating from the ${esc(s.name)} dashboard\u2026</div>`);
   out.push(h`<div class="hub-head">
     <h1 class="page-t" style="color:${s.accent};margin:0">${esc(s.name)}</h1>
-    ${s.dash && canDash(key) ? '<a class="btn btn-p hub-dash" href="' + esc(dashURL(key, null, null)) + '" target="_blank" rel="noopener">Open dashboard</a>' : ''}
+    <div class="hub-cta">
+      ${s.dash && canDash(key) ? '<a class="btn btn-p hub-dash" href="' + esc(dashURL(key, null, null)) + '" target="_blank" rel="noopener">Open dashboard</a>' : ''}
+      ${chatButton(key, s)}
+    </div>
   </div>`);
   if (d && d.fixtures && d.fixtures.length) {
     var fx0 = d.fixtures
@@ -4381,7 +4515,7 @@ function pagePreviews(){
 /* the full round preview: the same treatment as a single game, repeated,
    so the two never drift apart */
 function pagePreview(i){
-  var p = previewsAll()[i];
+  var p = previewById(i);
   if (!p) return pageNotFound();
   var sp = SP[p.sport] || {accent:'var(--rsg)', short:p.sportName, name:p.sportName, c1:'#333', c2:'#111'};
   if (p.sport && SP[p.sport] && !canPreview(p.sport)) {
@@ -5029,6 +5163,34 @@ function pageMembership(){
     ${sourceNote()}`;
 }
 
+/* The picker. Every competition Nathan covers is here, whether or not the
+   reader's tier opens it — picking one is about what they care about, not what
+   they've paid for, and the ordering applies the moment a tier opens it. */
+function favSection(){
+  var tiles = CONFIG.sports.filter(function (s){ return s.live; }).map(function (s){
+    var r = state.favs.indexOf(s.key);
+    var on = r > -1;
+    return h`<button type="button" class="favb${on ? ' on' : ''}" data-fav="${s.key}"
+      style="--fc:${s.accent}" aria-pressed="${on ? 'true' : 'false'}">
+      ${s.icon ? '<img class="favb-ic" src="' + esc(s.icon) + '" alt="">' : ''}
+      <span class="favb-n">${esc(s.short)}</span>
+      ${on ? '<span class="favb-r">' + (r + 1) + '</span>' : ''}
+    </button>`;
+  });
+  var n = state.favs.length;
+  return h`<section class="sec">
+    <div class="sec-h"><h2 class="sec-t">Your sports</h2>
+      ${n ? '<button class="sec-more" id="favClear" style="background:none;border:0;cursor:pointer;font:inherit;color:var(--t3)">Clear</button>' : ''}
+    </div>
+    <div class="favgrid">${tiles.join('')}</div>
+    <div class="favhint">${n
+      ? 'Tap in the order you want them. <b>' + esc(state.favs.map(function (k){
+          return (SP[k] || {}).short || k; }).join(', ')) + '</b> now lead the Stats Watch rail, the streaks and the Sports page. Everything else still shows underneath.'
+      : 'Tap the competitions you follow and they’ll lead every rail, in the order you pick them. Nothing gets hidden — the rest just sits below.'}
+      <br>Saved on this device only.</div>
+  </section>`;
+}
+
 function pageAccount(){
   if (!state.me) {
     return h`<h1 class="page-t">Your account</h1>
@@ -5048,7 +5210,8 @@ function pageAccount(){
         <div class="empty">Join on Patreon and your account unlocks here straight away.
           <div style="margin-top:12px"><a class="btn btn-p" href="${esc(CONFIG.patreon)}" target="_blank" rel="noopener">See the tiers</a></div>
         </div>
-      </section>`;
+      </section>
+      ${favSection()}`;
   }
 
   var me = state.me;
@@ -5123,6 +5286,8 @@ function pageAccount(){
         <a class="btn btn-p" style="margin-top:auto;justify-content:center" href="${esc(CONFIG.patreon)}" target="_blank" rel="noopener">Upgrade on Patreon</a>
       </div>
     </section>` : ''}
+
+    ${favSection()}
 
     <section class="sec">
       <div class="hero-cta">
@@ -5398,6 +5563,27 @@ window.addEventListener('hashchange', function(){
   podOpen = {};
   render();
   window.scrollTo(0,0);
+});
+
+/* Your-sports picker. Re-renders so the numbers, the summary line and every
+   rail underneath move together. */
+document.addEventListener('click', function (e){
+  var el = e.target;
+  while (el && el !== document && !(el.getAttribute && el.getAttribute('data-fav'))) el = el.parentNode;
+  if (el && el !== document) {
+    toggleFav(el.getAttribute('data-fav'));
+    var y = window.scrollY;
+    render();
+    window.scrollTo(0, y);   /* stay where they were tapping */
+    return;
+  }
+  if (e.target && e.target.id === 'favClear') {
+    state.favs = [];
+    saveFavs();
+    var y2 = window.scrollY;
+    render();
+    window.scrollTo(0, y2);
+  }
 });
 
 /* Podcast posters: swap the poster for the real player in place, so tapping one
