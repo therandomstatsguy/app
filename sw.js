@@ -7,10 +7,13 @@
         page itself and are far too big to cache (7-25MB each), so they are
         passed straight through to the network.
 
-   Bump CACHE whenever you publish a new build — the old one is deleted on
-   activate, so members pick the new version up on their next launch. */
+   CACHE is stamped by assemble.js on every build, so each publish retires the
+   previous shell on activate. Don't edit it by hand — the next build overwrites
+   it. An app already installed opens from this cache, so it can still be a
+   launch behind; version.json (never cached, below) is what lets the page
+   notice that and offer the reader an update. */
 
-var CACHE = 'rsg-v27';
+var CACHE = 'rsg-202609230455';
 var SHELL = [
   './',
   './index.html',
@@ -60,6 +63,16 @@ self.addEventListener('fetch', function (e) {
      the network. The dashboards are megabytes each and change through the week;
      a stale copy would be worse than none. */
   if (url.origin !== self.location.origin) return;
+
+  /* The version stamp is the one thing that must never come from the cache: it
+     is what tells an installed app the shell it is running is out of date, and
+     a cached copy would always agree with itself. */
+  if (/\/version\.json$/.test(url.pathname)) {
+    e.respondWith(fetch(req, {cache: 'no-store'}).catch(function () {
+      return new Response('{}', {headers: {'Content-Type': 'application/json'}});
+    }));
+    return;
+  }
 
   /* The app shell: serve from cache immediately so a launch is instant, then
      refresh the copy in the background for next time. */
