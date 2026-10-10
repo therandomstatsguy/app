@@ -1,0 +1,2326 @@
+[
+ {
+  "id": "npc-past-2026-09-17-0",
+  "sport": "npc",
+  "kind": "BEST TRYSCORER",
+  "round": "Round 8",
+  "when": "2026-09-17",
+  "ts": 20260917,
+  "ko": 1789629000000,
+  "legs": [
+   {
+    "txt": "Lucas Casey anytime tryscorer",
+    "team": "Otago"
+   }
+  ],
+  "score": "Counties Manukau v Otago  21-50",
+  "say": "Lucas Casey scored 1 try",
+  "price": 1.88,
+  "book": "NEDS"
+ },
+ {
+  "id": "npc-past-2026-09-18-1",
+  "sport": "npc",
+  "kind": "BEST TRYSCORER",
+  "round": "Round 8",
+  "when": "2026-09-18",
+  "ts": 20260918,
+  "ko": 1789715400000,
+  "legs": [
+   {
+    "txt": "Kyren Taumoefolau anytime tryscorer",
+    "team": "Tasman"
+   }
+  ],
+  "score": "Tasman v Auckland  22-24",
+  "say": "Kyren Taumoefolau scored 1 try",
+  "price": 1.5,
+  "book": "NEDS"
+ },
+ {
+  "id": "npc-past-2026-09-19-2",
+  "sport": "npc",
+  "kind": "BEST TRYSCORER",
+  "round": "Round 8",
+  "when": "2026-09-19",
+  "ts": 20260919,
+  "ko": 1789783500000,
+  "legs": [
+   {
+    "txt": "Darby Lancaster anytime tryscorer",
+    "team": "Hawke's Bay"
+   }
+  ],
+  "score": "Bay of Plenty v Hawke's Bay  32-17",
+  "say": "Darby Lancaster scored 1 try",
+  "price": 1.48,
+  "book": "NEDS"
+ },
+ {
+  "id": "npc-past-2026-09-19-4",
+  "sport": "npc",
+  "kind": "BEST TRYSCORER",
+  "round": "Round 8",
+  "when": "2026-09-19",
+  "ts": 20260919,
+  "ko": 1789801800000,
+  "legs": [
+   {
+    "txt": "Nathan Salmon anytime tryscorer",
+    "team": "Northland"
+   }
+  ],
+  "score": "Wellington v Northland  28-52",
+  "say": "Nathan Salmon scored 1 try",
+  "price": 1.67,
+  "book": "NEDS"
+ },
+ {
+  "id": "npc-past-2026-09-20-6",
+  "sport": "npc",
+  "kind": "BEST TRYSCORER",
+  "round": "Round 8",
+  "when": "2026-09-20",
+  "ts": 20260920,
+  "ko": 1789880700000,
+  "legs": [
+   {
+    "txt": "Kini Naholo anytime tryscorer",
+    "team": "Taranaki"
+   }
+  ],
+  "score": "Taranaki v Southland  55-19",
+  "say": "Kini Naholo scored 2 tries",
+  "price": 1.48,
+  "book": "NEDS"
+ },
+ {
+  "id": "npc-past-2026-09-24-0",
+  "sport": "npc",
+  "kind": "BEST MULTI",
+  "round": "Round 9",
+  "when": "2026-09-24",
+  "ts": 20260924,
+  "ko": 1790233800000,
+  "legs": [
+   {
+    "txt": "Tasman to win",
+    "team": "Tasman"
+   },
+   {
+    "txt": "Kyren Taumoefolau anytime tryscorer",
+    "team": "Tasman"
+   }
+  ],
+  "score": "Tasman v Bay of Plenty  45-26",
+  "say": "",
+  "price": null,
+  "book": ""
+ },
+ {
+  "id": "npc-past-2026-09-26-2",
+  "sport": "npc",
+  "kind": "BEST MULTI",
+  "round": "Round 9",
+  "when": "2026-09-26",
+  "ts": 20260926,
+  "ko": 1790388300000,
+  "legs": [
+   {
+    "txt": "Counties Manukau +23.5",
+    "team": null
+   },
+   {
+    "txt": "James Ramm anytime tryscorer",
+    "team": "Northland"
+   }
+  ],
+  "score": "Northland v Counties Manukau  19-22",
+  "say": "",
+  "price": null,
+  "book": ""
+ },
+ {
+  "id": "npc-past-2026-09-26-3",
+  "sport": "npc",
+  "kind": "BEST TIP",
+  "round": "Round 9",
+  "when": "2026-09-26",
+  "ts": 20260926,
+  "ko": 1790399100000,
+  "legs": [
+   {
+    "txt": "Southland +26.5",
+    "team": null
+   }
+  ],
+  "score": "Canterbury v Southland  34-21",
+  "say": "",
+  "price": null,
+  "book": ""
+ },
+ {
+  "id": "npc-past-2026-10-01-0",
+  "sport": "npc",
+  "kind": "BEST TIP",
+  "round": "Round 10",
+  "when": "2026-10-01",
+  "ts": 20261001,
+  "ko": 1790835000000,
+  "legs": [
+   {
+    "txt": "Auckland +14.5",
+    "team": null
+   }
+  ],
+  "score": "Otago v Auckland  45-42",
+  "say": "",
+  "price": null,
+  "book": ""
+ },
+ {
+  "id": "npc-past-2026-10-02-1",
+  "sport": "npc",
+  "kind": "BEST TIP",
+  "round": "Round 10",
+  "when": "2026-10-02",
+  "ts": 20261002,
+  "ko": 1790921400000,
+  "legs": [
+   {
+    "txt": "Southland Total Tries under 3.5",
+    "team": null
+   }
+  ],
+  "score": "Southland v Northland  14-28",
+  "say": "",
+  "price": null,
+  "book": ""
+ },
+ {
+  "id": "npc-past-2026-10-03-2",
+  "sport": "npc",
+  "kind": "BEST TIP",
+  "round": "Round 10",
+  "when": "2026-10-03",
+  "ts": 20261003,
+  "ko": 1790989500000,
+  "legs": [
+   {
+    "txt": "Manawatu Total Tries under 4.5",
+    "team": null
+   }
+  ],
+  "score": "Manawatu v Canterbury  12-22",
+  "say": "",
+  "price": null,
+  "book": ""
+ },
+ {
+  "id": "npc-past-2026-10-03-3",
+  "sport": "npc",
+  "kind": "BEST TIP",
+  "round": "Round 10",
+  "when": "2026-10-03",
+  "ts": 20261003,
+  "ko": 1791000300000,
+  "legs": [
+   {
+    "txt": "Under 66.5 points",
+    "team": null
+   }
+  ],
+  "score": "Counties Manukau v Hawke's Bay  12-7",
+  "say": "",
+  "price": null,
+  "book": ""
+ },
+ {
+  "id": "npc-past-2026-10-03-4",
+  "sport": "npc",
+  "kind": "BEST TRYSCORER",
+  "round": "Round 10",
+  "when": "2026-10-03",
+  "ts": 20261003,
+  "ko": 1791007800000,
+  "legs": [
+   {
+    "txt": "Kyren Taumoefolau anytime tryscorer",
+    "team": "Tasman"
+   }
+  ],
+  "score": "Waikato v Tasman  33-50",
+  "say": "Kyren Taumoefolau scored 4 tries",
+  "price": 1.5,
+  "book": "NEDS"
+ },
+ {
+  "id": "npc-past-2026-10-04-5",
+  "sport": "npc",
+  "kind": "BEST TRYSCORER",
+  "round": "Round 10",
+  "when": "2026-10-04",
+  "ts": 20261004,
+  "ko": 1791075900000,
+  "legs": [
+   {
+    "txt": "Kini Naholo anytime tryscorer",
+    "team": "Taranaki"
+   }
+  ],
+  "score": "Taranaki v Wellington  68-26",
+  "say": "Kini Naholo scored 1 try",
+  "price": 1.33,
+  "book": "NEDS"
+ },
+ {
+  "id": "npc-past-2026-10-04-6",
+  "sport": "npc",
+  "kind": "BEST MULTI",
+  "round": "Round 10",
+  "when": "2026-10-04",
+  "ts": 20261004,
+  "ko": 1791084900000,
+  "legs": [
+   {
+    "txt": "Total Points under 64.5",
+    "team": null
+   },
+   {
+    "txt": "Fehi Fineanganofo anytime tryscorer",
+    "team": null
+   }
+  ],
+  "score": "Bay of Plenty v North Harbour  38-21",
+  "say": "",
+  "price": null,
+  "book": ""
+ },
+ {
+  "id": "aflw-past-20260918-0",
+  "sport": "aflw",
+  "kind": "BEST PLAYER PROP",
+  "round": "Round 6",
+  "when": "20260918",
+  "ts": 20260918,
+  "ko": 1789717500000,
+  "legs": [
+   {
+    "txt": "Jenna Richardson 15+ disposals",
+    "team": "Hawthorn"
+   }
+  ],
+  "score": "Hawthorn v North Melbourne  32-25",
+  "say": "Jenna Richardson had 19 disposals",
+  "price": 1.5,
+  "book": "Neds"
+ },
+ {
+  "id": "aflw-past-20260919-2",
+  "sport": "aflw",
+  "kind": "BEST MULTI",
+  "round": "Round 6",
+  "when": "20260919",
+  "ts": 20260919,
+  "ko": 1789787100000,
+  "legs": [
+   {
+    "txt": "Melbourne -11.5",
+    "team": "Melbourne"
+   },
+   {
+    "txt": "Amelia Velardo 15+ disposals",
+    "team": "Carlton"
+   }
+  ],
+  "score": "Melbourne v Carlton  58-24",
+  "say": "",
+  "price": null,
+  "book": ""
+ },
+ {
+  "id": "aflw-past-20260919-3",
+  "sport": "aflw",
+  "kind": "BEST PLAYER PROP",
+  "round": "Round 6",
+  "when": "20260919",
+  "ts": 20260919,
+  "ko": 1789792500000,
+  "legs": [
+   {
+    "txt": "Chloe Molloy 15+ disposals",
+    "team": "Sydney"
+   }
+  ],
+  "score": "Port Adelaide v Sydney  27-41",
+  "say": "Chloe Molloy had 15 disposals",
+  "price": 1.63,
+  "book": "Sportsbet"
+ },
+ {
+  "id": "aflw-past-20260920-5",
+  "sport": "aflw",
+  "kind": "BEST MULTI",
+  "round": "Round 6",
+  "when": "20260920",
+  "ts": 20260920,
+  "ko": 1789871700000,
+  "legs": [
+   {
+    "txt": "Richmond -3.5",
+    "team": "Richmond"
+   },
+   {
+    "txt": "Cambridge McCormick 15+ disposals",
+    "team": "Greater Western Sydney"
+   }
+  ],
+  "score": "Greater Western Sydney v Richmond  61-68",
+  "say": "",
+  "price": null,
+  "book": ""
+ },
+ {
+  "id": "aflw-past-20260920-6",
+  "sport": "aflw",
+  "kind": "BEST MULTI",
+  "round": "Round 6",
+  "when": "20260920",
+  "ts": 20260920,
+  "ko": 1789873500000,
+  "legs": [
+   {
+    "txt": "Gold Coast -6.5",
+    "team": "Gold Coast"
+   },
+   {
+    "txt": "Charlie Rowbottom 25+ disposals",
+    "team": "Gold Coast"
+   }
+  ],
+  "score": "Essendon v Gold Coast  10-51",
+  "say": "",
+  "price": null,
+  "book": ""
+ },
+ {
+  "id": "aflw-past-20260920-8",
+  "sport": "aflw",
+  "kind": "BEST TIP",
+  "round": "Round 6",
+  "when": "20260920",
+  "ts": 20260920,
+  "ko": 1789887900000,
+  "legs": [
+   {
+    "txt": "Adelaide +8.5",
+    "team": "Adelaide"
+   }
+  ],
+  "score": "Brisbane v Adelaide  30-39",
+  "say": "",
+  "price": null,
+  "book": ""
+ },
+ {
+  "id": "aflw-past-20260924-0",
+  "sport": "aflw",
+  "kind": "BEST MULTI",
+  "round": "Round 7",
+  "when": "20260924",
+  "ts": 20260924,
+  "ko": 1790241300000,
+  "legs": [
+   {
+    "txt": "Cats win",
+    "team": "Geelong"
+   },
+   {
+    "txt": "Julia Crockett-Grills 1+ goals",
+    "team": "Geelong"
+   }
+  ],
+  "score": "Geelong v Hawthorn  82-46",
+  "say": "",
+  "price": null,
+  "book": ""
+ },
+ {
+  "id": "aflw-past-20260924-0-slate",
+  "sport": "aflw",
+  "kind": "🔥 FULL SLATE",
+  "round": "Round 7",
+  "when": "20260924",
+  "ts": 20260924,
+  "ko": 1790241300000,
+  "legs": [
+   {
+    "txt": "Julia Crockett-Grills 1+ goals",
+    "team": "Geelong"
+   },
+   {
+    "txt": "Chloe Scheer 2+ goals",
+    "team": "Geelong"
+   },
+   {
+    "txt": "Aine McDonagh 2+ goals",
+    "team": "Hawthorn"
+   },
+   {
+    "txt": "Rebecca Webster 20+ disposals",
+    "team": "Geelong"
+   }
+  ],
+  "score": "Geelong v Hawthorn  82-46",
+  "say": "",
+  "price": 11.34,
+  "book": ""
+ },
+ {
+  "id": "aflw-past-20260925-1",
+  "sport": "aflw",
+  "kind": "BEST TIP",
+  "round": "Round 7",
+  "when": "20260925",
+  "ts": 20260925,
+  "ko": 1790301900000,
+  "legs": [
+   {
+    "txt": "Essendon +12.5",
+    "team": "Essendon"
+   }
+  ],
+  "score": "Essendon v West Coast  35-45",
+  "say": "",
+  "price": null,
+  "book": ""
+ },
+ {
+  "id": "aflw-past-20260925-2",
+  "sport": "aflw",
+  "kind": "BEST MULTI",
+  "round": "Round 7",
+  "when": "20260925",
+  "ts": 20260925,
+  "ko": 1790309100000,
+  "legs": [
+   {
+    "txt": "Western Bulldogs -9.5",
+    "team": "Western Bulldogs"
+   },
+   {
+    "txt": "Heidi Woodley 10+ disposals",
+    "team": "Western Bulldogs"
+   }
+  ],
+  "score": "Western Bulldogs v Port Adelaide  62-49",
+  "say": "",
+  "price": null,
+  "book": ""
+ },
+ {
+  "id": "aflw-past-20260925-2-slate",
+  "sport": "aflw",
+  "kind": "🔥 FULL SLATE",
+  "round": "Round 7",
+  "when": "20260925",
+  "ts": 20260925,
+  "ko": 1790309100000,
+  "legs": [
+   {
+    "txt": "Heidi Woodley 10+ disposals",
+    "team": "Western Bulldogs"
+   },
+   {
+    "txt": "Lauren Young 10+ disposals",
+    "team": "Port Adelaide"
+   },
+   {
+    "txt": "Elaine Grigg 10+ disposals",
+    "team": "Western Bulldogs"
+   },
+   {
+    "txt": "Emma McDonald 10+ disposals",
+    "team": "Western Bulldogs"
+   }
+  ],
+  "score": "Western Bulldogs v Port Adelaide  62-49",
+  "say": "",
+  "price": 2.45,
+  "book": "SB"
+ },
+ {
+  "id": "aflw-past-20260925-3",
+  "sport": "aflw",
+  "kind": "BEST PLAYER PROP",
+  "round": "Round 7",
+  "when": "20260925",
+  "ts": 20260925,
+  "ko": 1790316000000,
+  "legs": [
+   {
+    "txt": "Amelia Velardo 15+ disposals",
+    "team": "Carlton"
+   }
+  ],
+  "score": "Carlton v Richmond  76-21",
+  "say": "Amelia Velardo had 15 disposals",
+  "price": 1.44,
+  "book": "NEDS"
+ },
+ {
+  "id": "aflw-past-20260927-5",
+  "sport": "aflw",
+  "kind": "BEST MULTI",
+  "round": "Round 7",
+  "when": "20260927",
+  "ts": 20260927,
+  "ko": 1790478300000,
+  "legs": [
+   {
+    "txt": "Fremantle +12.5",
+    "team": "Fremantle"
+   },
+   {
+    "txt": "Chelsea Biddell 15+ disposals",
+    "team": "Adelaide"
+   }
+  ],
+  "score": "Adelaide v Fremantle  35-60",
+  "say": "",
+  "price": null,
+  "book": ""
+ },
+ {
+  "id": "aflw-past-20260927-6",
+  "sport": "aflw",
+  "kind": "BEST PLAYER PROP",
+  "round": "Round 7",
+  "when": "20260927",
+  "ts": 20260927,
+  "ko": 1790478300000,
+  "legs": [
+   {
+    "txt": "Tilly Lucas-Rodd 20+ disposals",
+    "team": "Greater Western Sydney"
+   }
+  ],
+  "score": "Collingwood v Greater Western Sydney  34-25",
+  "say": "Tilly Lucas-Rodd had 25 disposals",
+  "price": 1.66,
+  "book": "SB"
+ },
+ {
+  "id": "aflw-past-20260927-7",
+  "sport": "aflw",
+  "kind": "BEST MULTI",
+  "round": "Round 7",
+  "when": "20260927",
+  "ts": 20260927,
+  "ko": 1790485500000,
+  "legs": [
+   {
+    "txt": "Sydney -4.5",
+    "team": "Sydney"
+   },
+   {
+    "txt": "Sophie Conway 15+ disposals",
+    "team": "Brisbane"
+   }
+  ],
+  "score": "Sydney v Brisbane  37-23",
+  "say": "",
+  "price": null,
+  "book": ""
+ },
+ {
+  "id": "aflw-past-20260927-8",
+  "sport": "aflw",
+  "kind": "BEST MULTI",
+  "round": "Round 7",
+  "when": "20260927",
+  "ts": 20260927,
+  "ko": 1790492700000,
+  "legs": [
+   {
+    "txt": "Gold Coast -22.5",
+    "team": "Gold Coast"
+   },
+   {
+    "txt": "Niamh McLaughlin 20+ disposals",
+    "team": "Gold Coast"
+   }
+  ],
+  "score": "Gold Coast v St Kilda  69-39",
+  "say": "",
+  "price": null,
+  "book": ""
+ },
+ {
+  "id": "aflw-past-20260927-8-slate",
+  "sport": "aflw",
+  "kind": "🔥 FULL SLATE",
+  "round": "Round 7",
+  "when": "20260927",
+  "ts": 20260927,
+  "ko": 1790492700000,
+  "legs": [
+   {
+    "txt": "Niamh McLaughlin 20+ disposals",
+    "team": "Gold Coast"
+   },
+   {
+    "txt": "Paige Trudgeon 10+ disposals",
+    "team": "St Kilda"
+   },
+   {
+    "txt": "Daisy D'Arcy 15+ disposals",
+    "team": "Gold Coast"
+   },
+   {
+    "txt": "Nicola Barr 10+ disposals",
+    "team": "St Kilda"
+   }
+  ],
+  "score": "Gold Coast v St Kilda  69-39",
+  "say": "",
+  "price": 2.07,
+  "book": "SB"
+ },
+ {
+  "id": "aflw-past-20261001-0",
+  "sport": "aflw",
+  "kind": "BEST MULTI",
+  "round": "Round 8",
+  "when": "20261001",
+  "ts": 20261001,
+  "ko": 1790846100000,
+  "legs": [
+   {
+    "txt": "Carlton win",
+    "team": "Carlton"
+   },
+   {
+    "txt": "Sophie McKay 1+ goals",
+    "team": "Carlton"
+   }
+  ],
+  "score": "Carlton v Hawthorn  36-24",
+  "say": "",
+  "price": null,
+  "book": ""
+ },
+ {
+  "id": "aflw-past-20261003-2",
+  "sport": "aflw",
+  "kind": "BEST PLAYER PROP",
+  "round": "Round 8",
+  "when": "20261003",
+  "ts": 20261003,
+  "ko": 1790996700000,
+  "legs": [
+   {
+    "txt": "Tilly Lucas-Rodd 20+ disposals",
+    "team": "Greater Western Sydney"
+   }
+  ],
+  "score": "Greater Western Sydney v Essendon  35-43",
+  "say": "Tilly Lucas-Rodd had 26 disposals",
+  "price": 1.28,
+  "book": "Sportsbet"
+ },
+ {
+  "id": "aflw-past-20261003-3",
+  "sport": "aflw",
+  "kind": "BEST MULTI",
+  "round": "Round 8",
+  "when": "20261003",
+  "ts": 20261003,
+  "ko": 1791003900000,
+  "legs": [
+   {
+    "txt": "Western Bulldogs -22.5",
+    "team": "Western Bulldogs"
+   },
+   {
+    "txt": "Charlotte Baskaran 10+ disposals",
+    "team": "St Kilda"
+   }
+  ],
+  "score": "Western Bulldogs v St Kilda  31-1",
+  "say": "",
+  "price": null,
+  "book": ""
+ },
+ {
+  "id": "aflw-past-20261003-4",
+  "sport": "aflw",
+  "kind": "BEST TIP",
+  "round": "Round 8",
+  "when": "20261003",
+  "ts": 20261003,
+  "ko": 1791183900000,
+  "legs": [
+   {
+    "txt": "Gold Coast +9.5",
+    "team": "Gold Coast"
+   }
+  ],
+  "score": "Brisbane v Gold Coast  20-40",
+  "say": "",
+  "price": null,
+  "book": ""
+ },
+ {
+  "id": "aflw-past-20261003-5",
+  "sport": "aflw",
+  "kind": "BEST TIP",
+  "round": "Round 8",
+  "when": "20261003",
+  "ts": 20261003,
+  "ko": 1791018900000,
+  "legs": [
+   {
+    "txt": "Port Adelaide +10.5",
+    "team": "Port Adelaide"
+   }
+  ],
+  "score": "Port Adelaide v Adelaide  36-22",
+  "say": "",
+  "price": null,
+  "book": ""
+ },
+ {
+  "id": "aflw-past-20261004-7",
+  "sport": "aflw",
+  "kind": "BEST PLAYER PROP",
+  "round": "Round 8",
+  "when": "20261004",
+  "ts": 20261004,
+  "ko": 1791003900000,
+  "legs": [
+   {
+    "txt": "Alyssa Bannan 10+ disposals",
+    "team": "Melbourne"
+   }
+  ],
+  "score": "Collingwood v Melbourne  21-42",
+  "say": "Alyssa Bannan had 15 disposals",
+  "price": 1.37,
+  "book": "Sportsbet"
+ },
+ {
+  "id": "aflw-past-20261004-7-slate",
+  "sport": "aflw",
+  "kind": "🔥 FULL SLATE",
+  "round": "Round 8",
+  "when": "20261004",
+  "ts": 20261004,
+  "ko": 1791003900000,
+  "legs": [
+   {
+    "txt": "Alyssa Bannan 10+ disposals",
+    "team": "Melbourne"
+   },
+   {
+    "txt": "Paxy Paxman 10+ disposals",
+    "team": "Melbourne"
+   },
+   {
+    "txt": "Ryleigh Wotherspoon 10+ disposals",
+    "team": "Melbourne"
+   },
+   {
+    "txt": "Ashley Centra 1+ goals",
+    "team": "Collingwood"
+   }
+  ],
+  "score": "Collingwood v Melbourne  21-42",
+  "say": "",
+  "price": 4.19,
+  "book": "Sportsbet"
+ },
+ {
+  "id": "aflw-past-20261004-8",
+  "sport": "aflw",
+  "kind": "BEST PLAYER PROP",
+  "round": "Round 8",
+  "when": "20261004",
+  "ts": 20261004,
+  "ko": 1791093900000,
+  "legs": [
+   {
+    "txt": "Amy Franklin 10+ disposals",
+    "team": "West Coast"
+   }
+  ],
+  "score": "West Coast v Fremantle  39-27",
+  "say": "Amy Franklin had 16 disposals",
+  "price": 1.36,
+  "book": "Sportsbet"
+ },
+ {
+  "id": "afl-past-20260918-0",
+  "sport": "afl",
+  "kind": "BEST PLAYER PROP",
+  "round": "Preliminary Finals",
+  "when": "20260918",
+  "ts": 20260918,
+  "ko": 1789724400000,
+  "legs": [
+   {
+    "txt": "Logan McDonald 2+ goals",
+    "team": null
+   }
+  ],
+  "score": "Sydney v Fremantle  71-83",
+  "say": "Logan McDonald kicked 3 goals",
+  "price": 1.73,
+  "book": "SB"
+ },
+ {
+  "id": "afl-past-20260919-1",
+  "sport": "afl",
+  "kind": "BEST MULTI",
+  "round": "Preliminary Finals",
+  "when": "20260919",
+  "ts": 20260919,
+  "ko": 1789802100000,
+  "legs": [
+   {
+    "txt": "Lions win",
+    "team": "Brisbane"
+   },
+   {
+    "txt": "Charlie Cameron 2+ goals",
+    "team": "Brisbane"
+   }
+  ],
+  "score": "Hawthorn v Brisbane  122-131",
+  "say": "",
+  "price": null,
+  "book": ""
+ },
+ {
+  "id": "epl-past-2026-09-18-0",
+  "sport": "epl",
+  "kind": "BEST TIP",
+  "round": "Matchweek 5",
+  "when": "2026-09-18",
+  "ts": 20260918,
+  "ko": 1789758000000,
+  "legs": [
+   {
+    "txt": "Brentford or Draw (Double Chance)",
+    "team": "Brentford"
+   }
+  ],
+  "score": "Brentford v Chelsea  3-0",
+  "say": "",
+  "price": 1.55,
+  "book": ""
+ },
+ {
+  "id": "epl-past-2026-09-19-1",
+  "sport": "epl",
+  "kind": "BEST TIP",
+  "round": "Matchweek 5",
+  "when": "2026-09-19",
+  "ts": 20260919,
+  "ko": 1789817400000,
+  "legs": [
+   {
+    "txt": "Villa or Draw (Double Chance)",
+    "team": "Aston Villa"
+   }
+  ],
+  "score": "Spurs v Villa  2-3",
+  "say": "",
+  "price": 1.8,
+  "book": ""
+ },
+ {
+  "id": "epl-past-2026-09-19-2",
+  "sport": "epl",
+  "kind": "BEST TIP",
+  "round": "Matchweek 5",
+  "when": "2026-09-19",
+  "ts": 20260919,
+  "ko": 1789826400000,
+  "legs": [
+   {
+    "txt": "Brighton +1.0 handicap",
+    "team": "Brighton"
+   }
+  ],
+  "score": "Brighton v Arsenal  3-0",
+  "say": "",
+  "price": 2.1,
+  "book": ""
+ },
+ {
+  "id": "epl-past-2026-09-19-3",
+  "sport": "epl",
+  "kind": "BEST PLAYER PROP",
+  "round": "Matchweek 5",
+  "when": "2026-09-19",
+  "ts": 20260919,
+  "ko": 1789826400000,
+  "legs": [
+   {
+    "txt": "Julio Enciso 2+ shots",
+    "team": "Ipswich"
+   }
+  ],
+  "score": "Everton v Ipswich  1-0",
+  "say": "Julio Enciso had 3 shots",
+  "price": 1.4,
+  "book": ""
+ },
+ {
+  "id": "epl-past-2026-09-19-3-slate",
+  "sport": "epl",
+  "kind": "🔥 FULL SLATE",
+  "round": "Matchweek 5",
+  "when": "2026-09-19",
+  "ts": 20260919,
+  "ko": 1789826400000,
+  "legs": [
+   {
+    "txt": "Julio Enciso 2+ shots",
+    "team": "Ipswich"
+   },
+   {
+    "txt": "Leif Davis 1+ fouls won",
+    "team": "Ipswich"
+   },
+   {
+    "txt": "James Tarkowski 1+ shots",
+    "team": "Everton"
+   }
+  ],
+  "score": "Everton v Ipswich  1-0",
+  "say": "",
+  "price": 4,
+  "book": ""
+ },
+ {
+  "id": "epl-past-2026-09-19-4",
+  "sport": "epl",
+  "kind": "BEST MULTI",
+  "round": "Matchweek 5",
+  "when": "2026-09-19",
+  "ts": 20260919,
+  "ko": 1789826400000,
+  "legs": [
+   {
+    "txt": "Hull +2.0 handicap",
+    "team": "Hull"
+   },
+   {
+    "txt": "Lewis Hall 1+ shots",
+    "team": "Newcastle"
+   }
+  ],
+  "score": "Newcastle v Hull  2-1",
+  "say": "",
+  "price": 2.44,
+  "book": ""
+ },
+ {
+  "id": "epl-past-2026-09-19-5",
+  "sport": "epl",
+  "kind": "BEST PLAYER PROP",
+  "round": "Matchweek 5",
+  "when": "2026-09-19",
+  "ts": 20260919,
+  "ko": 1789835400000,
+  "legs": [
+   {
+    "txt": "Bobby Thomas 1+ shots",
+    "team": "Coventry"
+   }
+  ],
+  "score": "Forest v Coventry  0-1",
+  "say": "Bobby Thomas had 1 shot",
+  "price": 1.73,
+  "book": ""
+ },
+ {
+  "id": "epl-past-2026-09-20-6",
+  "sport": "epl",
+  "kind": "BEST PLAYER PROP",
+  "round": "Matchweek 5",
+  "when": "2026-09-20",
+  "ts": 20260920,
+  "ko": 1789909200000,
+  "legs": [
+   {
+    "txt": "Dominik Szoboszlai 2+ shots",
+    "team": "Liverpool"
+   }
+  ],
+  "score": "Bournemouth v Liverpool  0-1",
+  "say": "Dominik Szoboszlai had 2 shots",
+  "price": 1.85,
+  "book": ""
+ },
+ {
+  "id": "epl-past-2026-09-20-8",
+  "sport": "epl",
+  "kind": "BEST PLAYER PROP",
+  "round": "Matchweek 5",
+  "when": "2026-09-20",
+  "ts": 20260920,
+  "ko": 1789909200000,
+  "legs": [
+   {
+    "txt": "Erling Haaland anytime goalscorer",
+    "team": "Man City"
+   }
+  ],
+  "score": "Man City v Sunderland  5-3",
+  "say": "Erling Haaland scored 1 goal",
+  "price": 1.67,
+  "book": ""
+ },
+ {
+  "id": "epl-past-2026-09-20-9",
+  "sport": "epl",
+  "kind": "BEST MULTI",
+  "round": "Matchweek 5",
+  "when": "2026-09-20",
+  "ts": 20260920,
+  "ko": 1789918200000,
+  "legs": [
+   {
+    "txt": "Fulham +1.0 handicap",
+    "team": "Fulham"
+   },
+   {
+    "txt": "Diogo Dalot 1+ shots",
+    "team": "Man Utd"
+   }
+  ],
+  "score": "Fulham v Man Utd  1-1",
+  "say": "",
+  "price": 3.06,
+  "book": ""
+ },
+ {
+  "id": "intl-past-2026-09-27-0",
+  "sport": "intl",
+  "kind": "BEST TRYSCORER",
+  "round": "Rugby Championship",
+  "when": "2026-09-27",
+  "ts": 20260927,
+  "ko": 1790501400000,
+  "legs": [
+   {
+    "txt": "Edwill van der Merwe anytime tryscorer",
+    "team": "South Africa"
+   }
+  ],
+  "score": "Australia v South Africa  42-38",
+  "say": "Edwill van der Merwe scored 1 try",
+  "price": 1.82,
+  "book": "NEDS"
+ },
+ {
+  "id": "nfl-past-2026W3-0",
+  "sport": "nfl",
+  "kind": "BEST PLAYER PROP",
+  "round": "Week 3",
+  "when": "2026W3",
+  "ts": 20260924,
+  "ko": 1790295300000,
+  "legs": [
+   {
+    "txt": "Jordan Love 30+ pass attempts",
+    "team": "GB"
+   }
+  ],
+  "score": "Packers v Falcons  14-35",
+  "say": "Jordan Love had 53 pass attempts",
+  "price": 1.6,
+  "book": "NEDS"
+ },
+ {
+  "id": "nfl-past-2026W3-1",
+  "sport": "nfl",
+  "kind": "BEST MULTI",
+  "round": "Week 3",
+  "when": "2026W3",
+  "ts": 20260927,
+  "ko": 1790528400000,
+  "legs": [
+   {
+    "txt": "Bills -7.5",
+    "team": "BUF"
+   },
+   {
+    "txt": "Josh Allen anytime touchdown",
+    "team": "BUF"
+   }
+  ],
+  "score": "Bills v Chargers  24-16",
+  "say": "",
+  "price": null,
+  "book": ""
+ },
+ {
+  "id": "nfl-past-2026W3-2",
+  "sport": "nfl",
+  "kind": "BEST MULTI",
+  "round": "Week 3",
+  "when": "2026W3",
+  "ts": 20260927,
+  "ko": 1790528400000,
+  "legs": [
+   {
+    "txt": "Under 41.5 total points",
+    "team": null
+   },
+   {
+    "txt": "Darren Waller 20+ receiving yards",
+    "team": "CAR"
+   }
+  ],
+  "score": "Browns v Panthers  21-18",
+  "say": "",
+  "price": null,
+  "book": ""
+ },
+ {
+  "id": "nfl-past-2026W3-3",
+  "sport": "nfl",
+  "kind": "BEST MULTI",
+  "round": "Week 3",
+  "when": "2026W3",
+  "ts": 20260927,
+  "ko": 1790528400000,
+  "legs": [
+   {
+    "txt": "Lions -6.5",
+    "team": "DET"
+   },
+   {
+    "txt": "Jameson Williams over 3.5 receptions",
+    "team": "DET"
+   }
+  ],
+  "score": "Lions v Jets  31-24",
+  "say": "",
+  "price": null,
+  "book": ""
+ },
+ {
+  "id": "nfl-past-2026W3-4",
+  "sport": "nfl",
+  "kind": "BEST PLAYER PROP",
+  "round": "Week 3",
+  "when": "2026W3",
+  "ts": 20260927,
+  "ko": 1790528400000,
+  "legs": [
+   {
+    "txt": "Keenan Allen over 3.5 receptions",
+    "team": "IND"
+   }
+  ],
+  "score": "Colts v Texans  19-17",
+  "say": "Keenan Allen had 6 receptions",
+  "price": 1.93,
+  "book": "SB"
+ },
+ {
+  "id": "nfl-past-2026W3-8",
+  "sport": "nfl",
+  "kind": "BEST TIP",
+  "round": "Week 3",
+  "when": "2026W3",
+  "ts": 20260927,
+  "ko": 1790528400000,
+  "legs": [
+   {
+    "txt": "Steelers +3.5",
+    "team": "PIT"
+   }
+  ],
+  "score": "Steelers v Bengals  30-27",
+  "say": "",
+  "price": null,
+  "book": ""
+ },
+ {
+  "id": "nfl-past-2026W3-9",
+  "sport": "nfl",
+  "kind": "BEST MULTI",
+  "round": "Week 3",
+  "when": "2026W3",
+  "ts": 20260927,
+  "ko": 1790528400000,
+  "legs": [
+   {
+    "txt": "Commanders over 15.5 points",
+    "team": null
+   },
+   {
+    "txt": "Rachaad White 15+ rushing yards",
+    "team": "WAS"
+   }
+  ],
+  "score": "Commanders v Seahawks  33-31",
+  "say": "",
+  "price": null,
+  "book": ""
+ },
+ {
+  "id": "nfl-past-2026W3-9-slate",
+  "sport": "nfl",
+  "kind": "🔥 FULL SLATE",
+  "round": "Week 3",
+  "when": "2026W3",
+  "ts": 20260927,
+  "ko": 1790528400000,
+  "legs": [
+   {
+    "txt": "Rachaad White 15+ rushing yards",
+    "team": "WAS"
+   },
+   {
+    "txt": "Cooper Kupp 20+ receiving yards",
+    "team": "SEA"
+   },
+   {
+    "txt": "Stefon Diggs 30+ receiving yards",
+    "team": "WAS"
+   },
+   {
+    "txt": "Jaxon Smith-Njigba anytime touchdown",
+    "team": "SEA"
+   }
+  ],
+  "score": "Commanders v Seahawks  33-31",
+  "say": "",
+  "price": 9.32,
+  "book": "SB"
+ },
+ {
+  "id": "nfl-past-2026W3-11",
+  "sport": "nfl",
+  "kind": "BEST TIP",
+  "round": "Week 3",
+  "when": "2026W3",
+  "ts": 20260927,
+  "ko": 1790539500000,
+  "legs": [
+   {
+    "txt": "Vikings win",
+    "team": "MIN"
+   }
+  ],
+  "score": "Buccaneers v Vikings  16-23",
+  "say": "",
+  "price": null,
+  "book": ""
+ },
+ {
+  "id": "nfl-past-2026W3-12",
+  "sport": "nfl",
+  "kind": "BEST TIP",
+  "round": "Week 3",
+  "when": "2026W3",
+  "ts": 20260927,
+  "ko": 1790540700000,
+  "legs": [
+   {
+    "txt": "Ravens win",
+    "team": "BAL"
+   }
+  ],
+  "score": "Cowboys v Ravens  31-34",
+  "say": "",
+  "price": null,
+  "book": ""
+ },
+ {
+  "id": "nfl-past-2026W3-13",
+  "sport": "nfl",
+  "kind": "BEST MULTI",
+  "round": "Week 3",
+  "when": "2026W3",
+  "ts": 20260927,
+  "ko": 1790540700000,
+  "legs": [
+   {
+    "txt": "Saints over 23.5 points",
+    "team": null
+   },
+   {
+    "txt": "Travis Etienne over 1.5 receptions",
+    "team": "NO"
+   }
+  ],
+  "score": "Saints v Raiders  27-35",
+  "say": "",
+  "price": null,
+  "book": ""
+ },
+ {
+  "id": "nfl-past-2026W3-14",
+  "sport": "nfl",
+  "kind": "BEST TIP",
+  "round": "Week 3",
+  "when": "2026W3",
+  "ts": 20260927,
+  "ko": 1790554800000,
+  "legs": [
+   {
+    "txt": "Broncos win",
+    "team": "DEN"
+   }
+  ],
+  "score": "Broncos v Rams  30-26",
+  "say": "",
+  "price": null,
+  "book": ""
+ },
+ {
+  "id": "nfl-past-2026W3-15",
+  "sport": "nfl",
+  "kind": "BEST MULTI",
+  "round": "Week 3",
+  "when": "2026W3",
+  "ts": 20260928,
+  "ko": 1790640900000,
+  "legs": [
+   {
+    "txt": "Bears +3.5",
+    "team": "CHI"
+   },
+   {
+    "txt": "Rome Odunze 20+ receiving yards",
+    "team": "CHI"
+   }
+  ],
+  "score": "Bears v Eagles  27-7",
+  "say": "",
+  "price": null,
+  "book": ""
+ },
+ {
+  "id": "nfl-past-2026W4-0",
+  "sport": "nfl",
+  "kind": "BEST MULTI",
+  "round": "Week 4",
+  "when": "2026W4",
+  "ts": 20261001,
+  "ko": 1790900100000,
+  "legs": [
+   {
+    "txt": "Browns +5.5",
+    "team": "CLE"
+   },
+   {
+    "txt": "Deshaun Watson 1+ passing TD",
+    "team": "CLE"
+   }
+  ],
+  "score": "Browns v Steelers  27-24",
+  "say": "",
+  "price": null,
+  "book": ""
+ },
+ {
+  "id": "nfl-past-2026W4-0-slate",
+  "sport": "nfl",
+  "kind": "🔥 FULL SLATE",
+  "round": "Week 4",
+  "when": "2026W4",
+  "ts": 20261001,
+  "ko": 1790900100000,
+  "legs": [
+   {
+    "txt": "Deshaun Watson 1+ passing TD",
+    "team": "CLE"
+   },
+   {
+    "txt": "Aaron Rodgers 20+ pass completions",
+    "team": "PIT"
+   },
+   {
+    "txt": "Darnell Washington 2+ receptions",
+    "team": "PIT"
+   },
+   {
+    "txt": "Harold Fannin anytime touchdown",
+    "team": null
+   }
+  ],
+  "score": "Browns v Steelers  27-24",
+  "say": "",
+  "price": 14.86,
+  "book": ""
+ },
+ {
+  "id": "nfl-past-2026W4-2",
+  "sport": "nfl",
+  "kind": "BEST TIP",
+  "round": "Week 4",
+  "when": "2026W4",
+  "ts": 20261004,
+  "ko": 1791133200000,
+  "legs": [
+   {
+    "txt": "Titans +11.5",
+    "team": "TEN"
+   }
+  ],
+  "score": "Ravens v Titans  24-18",
+  "say": "",
+  "price": 1.93,
+  "book": "SB"
+ },
+ {
+  "id": "nfl-past-2026W4-3",
+  "sport": "nfl",
+  "kind": "BEST TIP",
+  "round": "Week 4",
+  "when": "2026W4",
+  "ts": 20261004,
+  "ko": 1791133200000,
+  "legs": [
+   {
+    "txt": "Patriots +6.5",
+    "team": "NE"
+   }
+  ],
+  "score": "Bills v Patriots  26-29",
+  "say": "",
+  "price": 2,
+  "book": "SB"
+ },
+ {
+  "id": "nfl-past-2026W4-4",
+  "sport": "nfl",
+  "kind": "BEST MULTI",
+  "round": "Week 4",
+  "when": "2026W4",
+  "ts": 20261004,
+  "ko": 1791133200000,
+  "legs": [
+   {
+    "txt": "Bears win",
+    "team": "CHI"
+   },
+   {
+    "txt": "Cole Kmet over 1.5 receptions",
+    "team": "CHI"
+   }
+  ],
+  "score": "Bears v Jets  23-12",
+  "say": "",
+  "price": 3.75,
+  "book": ""
+ },
+ {
+  "id": "nfl-past-2026W4-5",
+  "sport": "nfl",
+  "kind": "BEST MULTI",
+  "round": "Week 4",
+  "when": "2026W4",
+  "ts": 20261004,
+  "ko": 1791133200000,
+  "legs": [
+   {
+    "txt": "Jaguars win",
+    "team": "JAX"
+   },
+   {
+    "txt": "Jakobi Meyers 30+ receiving yards",
+    "team": "JAX"
+   }
+  ],
+  "score": "Bengals v Jaguars  17-22",
+  "say": "",
+  "price": 3.38,
+  "book": ""
+ },
+ {
+  "id": "nfl-past-2026W4-6",
+  "sport": "nfl",
+  "kind": "BEST PLAYER PROP",
+  "round": "Week 4",
+  "when": "2026W4",
+  "ts": 20261004,
+  "ko": 1791133200000,
+  "legs": [
+   {
+    "txt": "CeeDee Lamb 70+ receiving yards",
+    "team": "DAL"
+   }
+  ],
+  "score": "Texans v Cowboys  30-34",
+  "say": "CeeDee Lamb had 189 receiving yards",
+  "price": 1.62,
+  "book": "SB"
+ },
+ {
+  "id": "nfl-past-2026W4-6-slate",
+  "sport": "nfl",
+  "kind": "🔥 FULL SLATE",
+  "round": "Week 4",
+  "when": "2026W4",
+  "ts": 20261004,
+  "ko": 1791133200000,
+  "legs": [
+   {
+    "txt": "CeeDee Lamb 70+ receiving yards",
+    "team": "DAL"
+   },
+   {
+    "txt": "David Montgomery 10+ receiving yards",
+    "team": "HOU"
+   },
+   {
+    "txt": "C.J. Stroud 10+ rushing yards",
+    "team": "HOU"
+   },
+   {
+    "txt": "Javonte Williams anytime touchdown",
+    "team": "DAL"
+   }
+  ],
+  "score": "Texans v Cowboys  30-34",
+  "say": "",
+  "price": 8.81,
+  "book": ""
+ },
+ {
+  "id": "nfl-past-2026W4-7",
+  "sport": "nfl",
+  "kind": "BEST MULTI",
+  "round": "Week 4",
+  "when": "2026W4",
+  "ts": 20261004,
+  "ko": 1791133200000,
+  "legs": [
+   {
+    "txt": "Cardinals over 23.5 points",
+    "team": null
+   },
+   {
+    "txt": "Malik Nabers 50+ receiving yards",
+    "team": "NYG"
+   }
+  ],
+  "score": "Giants v Cardinals  36-24",
+  "say": "",
+  "price": 3.18,
+  "book": ""
+ },
+ {
+  "id": "nfl-past-2026W4-8",
+  "sport": "nfl",
+  "kind": "BEST PLAYER PROP",
+  "round": "Week 4",
+  "when": "2026W4",
+  "ts": 20261004,
+  "ko": 1791133200000,
+  "legs": [
+   {
+    "txt": "Kyren Williams 50+ rushing yards",
+    "team": "LAR"
+   }
+  ],
+  "score": "Eagles v Rams  20-24",
+  "say": "Kyren Williams ran for 80 rushing yards",
+  "price": 1.57,
+  "book": "SB"
+ },
+ {
+  "id": "nfl-past-2026W4-9",
+  "sport": "nfl",
+  "kind": "BEST PLAYER PROP",
+  "round": "Week 4",
+  "when": "2026W4",
+  "ts": 20261004,
+  "ko": 1791133200000,
+  "legs": [
+   {
+    "txt": "Chris Godwin 20+ receiving yards",
+    "team": null
+   }
+  ],
+  "score": "Buccaneers v Packers  14-17",
+  "say": "Chris Godwin had 31 receiving yards",
+  "price": 1.5,
+  "book": "NEDS"
+ },
+ {
+  "id": "nfl-past-2026W4-13",
+  "sport": "nfl",
+  "kind": "BEST TIP",
+  "round": "Week 4",
+  "when": "2026W4",
+  "ts": 20261004,
+  "ko": 1791145500000,
+  "legs": [
+   {
+    "txt": "49ers -2.5",
+    "team": "SF"
+   }
+  ],
+  "score": "49ers v Broncos  24-14",
+  "say": "",
+  "price": 1.85,
+  "book": "SB"
+ },
+ {
+  "id": "nrl-past-2026RPF-0",
+  "sport": "nrl",
+  "kind": "BEST TIP",
+  "round": "Preliminary Finals",
+  "when": "2026RPF",
+  "ts": 0,
+  "ko": 0,
+  "legs": [
+   {
+    "txt": "Over 44.5 points",
+    "team": null
+   }
+  ],
+  "score": "Dolphins v Roosters  20-36",
+  "say": "",
+  "price": null,
+  "book": ""
+ },
+ {
+  "id": "nrl-past-2026RPF-1",
+  "sport": "nrl",
+  "kind": "BEST TIP",
+  "round": "Preliminary Finals",
+  "when": "2026RPF",
+  "ts": 0,
+  "ko": 0,
+  "legs": [
+   {
+    "txt": "Under 46.5 points",
+    "team": null
+   }
+  ],
+  "score": "Panthers v Knights  14-22",
+  "say": "",
+  "price": null,
+  "book": ""
+ },
+ {
+  "id": "nrlw-past-2026-09-26-0",
+  "sport": "nrlw",
+  "kind": "BEST MULTI",
+  "round": "Preliminary Finals",
+  "when": "2026-09-26",
+  "ts": 20260926,
+  "ko": 1790416200000,
+  "legs": [
+   {
+    "txt": "Raiders +22.5",
+    "team": "Raiders"
+   },
+   {
+    "txt": "Jayme Fressard anytime tryscorer",
+    "team": "Roosters"
+   }
+  ],
+  "score": "Roosters v Raiders  20-10",
+  "say": "",
+  "price": null,
+  "book": ""
+ },
+ {
+  "id": "nrlw-past-2026-09-27-1",
+  "sport": "nrlw",
+  "kind": "BEST TRYSCORER",
+  "round": "Preliminary Finals",
+  "when": "2026-09-27",
+  "ts": 20260927,
+  "ko": 1790478300000,
+  "legs": [
+   {
+    "txt": "Tamika Upton anytime tryscorer",
+    "team": "Broncos"
+   }
+  ],
+  "score": "Titans v Broncos  8-20",
+  "say": "Tamika Upton scored 1 try",
+  "price": 1.63,
+  "book": "SB"
+ },
+ {
+  "id": "superleague-past-18 Sep 2026-0",
+  "sport": "superleague",
+  "kind": "BEST MULTI",
+  "round": "Elimination Finals",
+  "when": "18 Sep 2026",
+  "ts": 20260918,
+  "ko": 1789758000000,
+  "legs": [
+   {
+    "txt": "Over 36.5 points",
+    "team": null
+   },
+   {
+    "txt": "Tom Johnstone anytime tryscorer",
+    "team": "Wakefield Trinity"
+   }
+  ],
+  "score": "Wakefield v Leigh  26-16",
+  "say": "",
+  "price": null,
+  "book": ""
+ },
+ {
+  "id": "superleague-past-19 Sep 2026-1",
+  "sport": "superleague",
+  "kind": "BEST MULTI",
+  "round": "Elimination Finals",
+  "when": "19 Sep 2026",
+  "ts": 20260919,
+  "ko": 1789835400000,
+  "legs": [
+   {
+    "txt": "Warrington win",
+    "team": "Warrington"
+   },
+   {
+    "txt": "Matty Ashton anytime tryscorer",
+    "team": "Warrington"
+   }
+  ],
+  "score": "Warrington v Hull KR  35-12",
+  "say": "",
+  "price": null,
+  "book": ""
+ },
+ {
+  "id": "football-past-2026-09-24-1",
+  "sport": "football",
+  "kind": "BEST TIP",
+  "round": "Nations League",
+  "when": "2026-09-24",
+  "ts": 20260924,
+  "ko": 1790244300000,
+  "legs": [
+   {
+    "txt": "Japan to win",
+    "team": null,
+    "flag": "🇯🇵"
+   }
+  ],
+  "score": "Japan v Uruguay  3-1",
+  "say": "",
+  "price": 1.8,
+  "book": "SB"
+ },
+ {
+  "id": "football-past-2026-09-24-2",
+  "sport": "football",
+  "kind": "BEST MULTI",
+  "round": "Nations League",
+  "when": "2026-09-24",
+  "ts": 20260924,
+  "ko": 1790247600000,
+  "legs": [
+   {
+    "txt": "South Korea to win",
+    "team": null,
+    "flag": "🇰🇷"
+   },
+   {
+    "txt": "Moisés Caicedo 1+ shots",
+    "team": null
+   }
+  ],
+  "score": "South Korea v Ecuador  3-0",
+  "say": "",
+  "price": 3.41,
+  "book": ""
+ },
+ {
+  "id": "football-past-2026-09-24-5",
+  "sport": "football",
+  "kind": "BEST MULTI",
+  "round": "Nations League",
+  "when": "2026-09-24",
+  "ts": 20260924,
+  "ko": 1790275500000,
+  "legs": [
+   {
+    "txt": "Norway to win",
+    "team": "Norway"
+   },
+   {
+    "txt": "Erling Haaland Anytime goal",
+    "team": "Norway"
+   }
+  ],
+  "score": "Norway v Denmark  3-2",
+  "say": "",
+  "price": 2.48,
+  "book": ""
+ },
+ {
+  "id": "football-past-2026-09-24-6",
+  "sport": "football",
+  "kind": "BEST TIP",
+  "round": "Nations League",
+  "when": "2026-09-24",
+  "ts": 20260924,
+  "ko": 1790275500000,
+  "legs": [
+   {
+    "txt": "Over 9.5 total corners",
+    "team": null
+   }
+  ],
+  "score": "Portugal v Wales  1-0",
+  "say": "",
+  "price": 1.93,
+  "book": "SB"
+ },
+ {
+  "id": "football-past-2026-09-29-8",
+  "sport": "football",
+  "kind": "BEST MULTI",
+  "round": "Nations League",
+  "when": "2026-09-29",
+  "ts": 20260929,
+  "ko": 1790676000000,
+  "legs": [
+   {
+    "txt": "Brazil -1.0",
+    "team": null,
+    "flag": "🇧🇷"
+   },
+   {
+    "txt": "Alessandro Circati 1+ fouls won",
+    "team": null,
+    "flag": "🇦🇺"
+   }
+  ],
+  "score": "Australia v Brazil  2-4",
+  "say": "",
+  "price": 2.96,
+  "book": ""
+ },
+ {
+  "id": "football-past-2026-09-25-9",
+  "sport": "football",
+  "kind": "BEST PLAYER PROP",
+  "round": "Nations League",
+  "when": "2026-09-25",
+  "ts": 20260925,
+  "ko": 1790361900000,
+  "legs": [
+   {
+    "txt": "Kevin De Bruyne 2+ shots",
+    "team": "Belgium"
+   }
+  ],
+  "score": "Italy v Belgium  0-2",
+  "say": "Kevin De Bruyne had 3 shots",
+  "price": 1.4,
+  "book": "SB"
+ },
+ {
+  "id": "football-past-2026-09-25-10",
+  "sport": "football",
+  "kind": "BEST MULTI",
+  "round": "Nations League",
+  "when": "2026-09-25",
+  "ts": 20260925,
+  "ko": 1790361900000,
+  "legs": [
+   {
+    "txt": "France to win",
+    "team": "France"
+   },
+   {
+    "txt": "Abdülkerim Bardakci 1+ shots",
+    "team": "Türkiye"
+   }
+  ],
+  "score": "Türkiye v France  0-1",
+  "say": "",
+  "price": 3.15,
+  "book": ""
+ },
+ {
+  "id": "football-past-2026-09-26-12",
+  "sport": "football",
+  "kind": "BEST MULTI",
+  "round": "Nations League",
+  "when": "2026-09-26",
+  "ts": 20260926,
+  "ko": 1790454600000,
+  "legs": [
+   {
+    "txt": "United States to win",
+    "team": null,
+    "flag": "🇺🇸"
+   },
+   {
+    "txt": "Alex Freeman 1+ shots",
+    "team": null,
+    "flag": "🇺🇸"
+   }
+  ],
+  "score": "United States v Peru  4-1",
+  "say": "",
+  "price": 2.46,
+  "book": ""
+ },
+ {
+  "id": "football-past-2026-09-26-13",
+  "sport": "football",
+  "kind": "BEST TIP",
+  "round": "Nations League",
+  "when": "2026-09-26",
+  "ts": 20260926,
+  "ko": 1790463600000,
+  "legs": [
+   {
+    "txt": "Canada to win",
+    "team": null,
+    "flag": "🇨🇦"
+   }
+  ],
+  "score": "Canada v Chile  1-0",
+  "say": "",
+  "price": 1.62,
+  "book": "SB"
+ },
+ {
+  "id": "football-past-2026-09-26-14",
+  "sport": "football",
+  "kind": "BEST TIP",
+  "round": "Nations League",
+  "when": "2026-09-26",
+  "ts": 20260926,
+  "ko": 1790448300000,
+  "legs": [
+   {
+    "txt": "Croatia to win",
+    "team": "Croatia"
+   }
+  ],
+  "score": "Czechia v Croatia  1-2",
+  "say": "",
+  "price": 2.12,
+  "book": "SB"
+ },
+ {
+  "id": "football-past-2026-09-26-15",
+  "sport": "football",
+  "kind": "BEST TIP",
+  "round": "Nations League",
+  "when": "2026-09-26",
+  "ts": 20260926,
+  "ko": 1790448300000,
+  "legs": [
+   {
+    "txt": "Spain to win",
+    "team": "Spain"
+   }
+  ],
+  "score": "England v Spain  2-3",
+  "say": "",
+  "price": 2.4,
+  "book": "SB"
+ },
+ {
+  "id": "football-past-2026-09-27-16",
+  "sport": "football",
+  "kind": "BEST MULTI",
+  "round": "Nations League",
+  "when": "2026-09-27",
+  "ts": 20260927,
+  "ko": 1790524800000,
+  "legs": [
+   {
+    "txt": "Denmark -1.0 handicap",
+    "team": "Denmark"
+   },
+   {
+    "txt": "Morten Hjulmand 2+ fouls won",
+    "team": "Denmark"
+   }
+  ],
+  "score": "Denmark v Wales  2-0",
+  "say": "",
+  "price": 4.2,
+  "book": ""
+ },
+ {
+  "id": "football-past-2026-09-27-17",
+  "sport": "football",
+  "kind": "BEST TIP",
+  "round": "Nations League",
+  "when": "2026-09-27",
+  "ts": 20260927,
+  "ko": 1790524800000,
+  "legs": [
+   {
+    "txt": "Netherlands to win",
+    "team": "Netherlands"
+   }
+  ],
+  "score": "Serbia v Netherlands  1-2",
+  "say": "",
+  "price": 1.37,
+  "book": "SB"
+ },
+ {
+  "id": "football-past-2026-09-27-19",
+  "sport": "football",
+  "kind": "BEST PLAYER PROP",
+  "round": "Nations League",
+  "when": "2026-09-27",
+  "ts": 20260927,
+  "ko": 1790534700000,
+  "legs": [
+   {
+    "txt": "João Félix 3+ shots",
+    "team": "Portugal"
+   }
+  ],
+  "score": "Norway v Portugal  1-2",
+  "say": "João Félix had 3 shots",
+  "price": 1.62,
+  "book": "SB"
+ },
+ {
+  "id": "football-past-2026-09-28-20",
+  "sport": "football",
+  "kind": "BEST TIP",
+  "round": "Nations League",
+  "when": "2026-09-28",
+  "ts": 20260928,
+  "ko": 1790621100000,
+  "legs": [
+   {
+    "txt": "France to win",
+    "team": "France"
+   }
+  ],
+  "score": "Belgium v France  0-1",
+  "say": "",
+  "price": 1.87,
+  "book": "SB"
+ },
+ {
+  "id": "football-past-2026-09-28-21",
+  "sport": "football",
+  "kind": "BEST TIP",
+  "round": "Nations League",
+  "when": "2026-09-28",
+  "ts": 20260928,
+  "ko": 1790621100000,
+  "legs": [
+   {
+    "txt": "Italy to win",
+    "team": "Italy"
+   }
+  ],
+  "score": "Türkiye v Italy  1-4",
+  "say": "",
+  "price": 2.55,
+  "book": "SB"
+ },
+ {
+  "id": "football-past-2026-09-29-22",
+  "sport": "football",
+  "kind": "BEST TIP",
+  "round": "Nations League",
+  "when": "2026-09-29",
+  "ts": 20260929,
+  "ko": 1790707500000,
+  "legs": [
+   {
+    "txt": "England to win",
+    "team": "England"
+   }
+  ],
+  "score": "Czechia v England  0-2",
+  "say": "",
+  "price": 1.27,
+  "book": "SB"
+ },
+ {
+  "id": "football-past-2026-09-29-23",
+  "sport": "football",
+  "kind": "BEST TIP",
+  "round": "Nations League",
+  "when": "2026-09-29",
+  "ts": 20260929,
+  "ko": 1790707500000,
+  "legs": [
+   {
+    "txt": "Spain -1.0 handicap",
+    "team": "Spain"
+   }
+  ],
+  "score": "Spain v Croatia  4-1",
+  "say": "",
+  "price": 1.53,
+  "book": "SB"
+ },
+ {
+  "id": "football-past-2026-09-29-24",
+  "sport": "football",
+  "kind": "BEST GOALSCORER",
+  "round": "Nations League",
+  "when": "2026-09-29",
+  "ts": 20260929,
+  "ko": 1790676000000,
+  "legs": [
+   {
+    "txt": "Vinícius Júnior",
+    "team": null,
+    "flag": "🇧🇷"
+   }
+  ],
+  "score": "Australia v Brazil  2-4",
+  "say": "Vinícius Júnior scored 1 goal",
+  "price": 2.5,
+  "book": "SB"
+ },
+ {
+  "id": "football-past-2026-09-30-25",
+  "sport": "football",
+  "kind": "BEST TIP",
+  "round": "Nations League",
+  "when": "2026-09-30",
+  "ts": 20260930,
+  "ko": 1790726400000,
+  "legs": [
+   {
+    "txt": "United States to win",
+    "team": null,
+    "flag": "🇺🇸"
+   }
+  ],
+  "score": "United States v Chile  4-2",
+  "say": "",
+  "price": 1.41,
+  "book": "SB"
+ },
+ {
+  "id": "football-past-2026-09-27-28",
+  "sport": "football",
+  "kind": "BEST TIP",
+  "round": "Nations League",
+  "when": "2026-09-27",
+  "ts": 20260927,
+  "ko": 1790448300000,
+  "legs": [
+   {
+    "txt": "Denmark to win",
+    "team": "Denmark"
+   }
+  ],
+  "score": "Wales v Denmark  0-2",
+  "say": "",
+  "price": 1.94,
+  "book": "SB"
+ },
+ {
+  "id": "football-past-2026-09-27-30",
+  "sport": "football",
+  "kind": "BEST MULTI",
+  "round": "Nations League",
+  "when": "2026-09-27",
+  "ts": 20260927,
+  "ko": 1790448300000,
+  "legs": [
+   {
+    "txt": "Portugal to win",
+    "team": "Portugal"
+   },
+   {
+    "txt": "Erling Haaland 4+ shots",
+    "team": "Norway"
+   }
+  ],
+  "score": "Portugal v Norway  2-1",
+  "say": "",
+  "price": 2.24,
+  "book": ""
+ },
+ {
+  "id": "football-past-2026-09-28-31",
+  "sport": "football",
+  "kind": "BEST TIP",
+  "round": "Nations League",
+  "when": "2026-09-28",
+  "ts": 20260928,
+  "ko": 1790534700000,
+  "legs": [
+   {
+    "txt": "France to win",
+    "team": "France"
+   }
+  ],
+  "score": "France v Belgium  1-0",
+  "say": "",
+  "price": 1.49,
+  "book": "SB"
+ },
+ {
+  "id": "football-past-2026-09-28-32",
+  "sport": "football",
+  "kind": "BEST MULTI",
+  "round": "Nations League",
+  "when": "2026-09-28",
+  "ts": 20260928,
+  "ko": 1790534700000,
+  "legs": [
+   {
+    "txt": "Italy to win",
+    "team": "Italy"
+   },
+   {
+    "txt": "Davide Frattesi 1+ shots on target",
+    "team": "Italy"
+   }
+  ],
+  "score": "Italy v Türkiye  4-1",
+  "say": "",
+  "price": 2.03,
+  "book": ""
+ },
+ {
+  "id": "football-past-2026-09-29-33",
+  "sport": "football",
+  "kind": "BEST MULTI",
+  "round": "Nations League",
+  "when": "2026-09-29",
+  "ts": 20260929,
+  "ko": 1790621100000,
+  "legs": [
+   {
+    "txt": "England -1.0 handicap",
+    "team": "England"
+   },
+   {
+    "txt": "Anthony Gordon Anytime goal",
+    "team": "England"
+   }
+  ],
+  "score": "England v Czechia  2-0",
+  "say": "",
+  "price": 2.98,
+  "book": ""
+ }
+]
