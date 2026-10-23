@@ -13,7 +13,7 @@
    launch behind; version.json (never cached, below) is what lets the page
    notice that and offer the reader an update. */
 
-var CACHE = 'rsg-202610230519';
+var CACHE = 'rsg-202610230948';
 var SHELL = [
   './',
   './index.html',
