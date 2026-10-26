@@ -1,0 +1,33 @@
+# Rebuilds site-feed.json (the website's fixtures + Stats Watch feed)
+# every time a new index.html is pushed. Nothing in the app changes.
+name: Build website feed
+
+on:
+  push:
+    branches: [main]
+    paths: [index.html, site-feed.js]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  feed:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Build site-feed.json from the app snapshot
+        run: node site-feed.js index.html site-feed.json
+      - name: Commit the feed if it changed
+        run: |
+          if git diff --quiet -- site-feed.json && git ls-files --error-unmatch site-feed.json >/dev/null 2>&1; then
+            echo "Feed unchanged"; exit 0
+          fi
+          git config user.name "rsg-feed-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add site-feed.json
+          git commit -m "Update website feed"
+          git push
